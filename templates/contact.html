@@ -30,13 +30,12 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
    </head>
    <!-- body -->
-   <body class="main-layout about_page">
+   <body class="main-layout contact_page">
       <!-- loader  -->
       <div class="loader_bg">
          <div class="loader"><img src="images/loading.gif" alt="#" /></div>
       </div>
       <!-- end loader -->
-      <!-- header -->
       <header>
          <!-- header inner -->
          <div class="header">
@@ -56,10 +55,10 @@
                         </button>
                         <div class="collapse navbar-collapse" id="navbarsExample04">
                            <ul class="navbar-nav mr-auto">
-                              <li class="nav-item active">
+                              <li class="nav-item ">
                                  <a class="nav-link" href="index.html">Home</a>
                               </li>
-                              <li class="nav-item">
+                              <li class="nav-item active">
                                  <a class="nav-link" href="contact.html">Contact Us</a>
                               </li>
                            </ul>
@@ -71,87 +70,50 @@
             </div>
          </div>
       </header>
-      <!-- end header inner -->
-      <!-- end header -->
       <div class="blue_bg">
          <div class="container">
             <div class="row">
                <div class="col-md-12">
                   <div class="titlepage">
-                     <h2> <img src="images/heading_icon.png" alt="#">PSGCAS Placement Cell <img src="images/heading_icon.png" alt="#"></h2>
+                     <h2><img src="images/heading_iconw.png" alt="#"/>Contact Us</h2>
                   </div>
                </div>
             </div>
          </div>
       </div>
-      <!-- about section -->
-      <div id="about" class="about">
-         <div class="container">
-            <div class="row">
-               <div class="col-md-10 offset-md-1">
-                  <div class="titlepage" style="overflow-x: auto;">
-                     <form action="/img-scan.html">
-                        <p>Student Profile</p>
-                        <table>
-                           <tr>
-                              <td><label for="name">Name:</label></td>
-                              <td><input type="text" name="stu_name"></td>
-                           </tr>
-                           <tr>
-                              <td><label for="roll_no">Register Number:</label></td>
-                              <td><input type="text" name="roll_no"></td>
-                           </tr>
-                           <tr>
-                              <td><label for="name">Department:</label></td>
-                              <td><select id="dept" name="dept">
-                                 <option value="default" selected>Choose your Department</option>
-                                    <option value="it">Department of Information Technology</option>
-                                    <option value="ct">Department of Computer Technology</option>
-                                    <option value="vc">Department of Visual Communications</option>
-                                    <option value="tam">Department of Tamil</option>
-                                    <option value="eng">Department of English</option>
-                                    <option value="cs">Department of Computer Science</option>
-                                    <option value="ca">Department of Computer Applications</option>
-                                    </select>
-                              </td>
-                           </tr>
-                           <tr>
-                              <td><label for="course">Are You :</label></td>
-                              <td>
-                                 <select id="course" name="course">
-                                    <option value="ug">UG</option>
-                                    <option value="pg">PG</option>
-                                 </select>
-                              </td>
-                           </tr>
-                           <tr>
-                              <td><label for="roll_no">Year:</label></td>
-                              <td><select id="year" name="year">
-                                 <option value="1" selected>Choose your Current Year</option>
-                                 <option value="1">First Year</option>
-                                 <option value="2">Second Year</option>
-                                 <option value="3">Third Year</option>
-                                 <option value="4">Forth Year</option>
-                                 <option value="5">Fifth Year</options>
-                                 </select>
-                              </td>
-                           </tr>
-                        </table>
-                        <br><br>
-                        <a href="img-scan.html"><input type="button" value="Proceed"></a>
-                     <br><br>
+      <!-- contact section -->
+      <div id="contact" class="contact">
+         <div class="con_bg">
+            <div class="container-fluid">
+               <div class="row ">
+                  <div class="col-md-6">
+                     <form id="request" class="main_form">
+                        <div class="row">
+                           <div class="col-md-12 ">
+                              <input class="contactus" placeholder="Name" type="type" name="Name"> 
+                           </div>
+                           <div class="col-md-12">
+                              <input class="contactus" placeholder="Phone Number" type="type" name="Phone Number"> 
+                           </div>
+                           <div class="col-md-12">
+                              <input class="contactus" placeholder="Email" type="type" name="Email">                          
+                           </div>
+                           <div class="col-md-12">
+                              <input class="contactusmess" placeholder="Message" type="type" Message="Name">
+                           </div>
+                           <div class="col-md-12">
+                              <button class="send_btn">Send</button><br><br>
+                           </div>
+                        </div>
                      </form>
                   </div>
+                  
                </div>
-               
             </div>
          </div>
       </div>
-      <!-- about section -->
+      <!-- end contact section -->
       <!--  footer -->
-   </br>
-</br>
-
       <div class="copyright">
                <div class="container">
                   <div class="row">
@@ -182,6 +144,26 @@
            document.getElementById("mySidepanel").style.width = "0";
          }
       </script>
+      <script>
+         // This example adds a marker to indicate the position of Bondi Beach in Sydney,
+         // Australia.
+         function initMap() {
+           var map = new google.maps.Map(document.getElementById('map'), {
+             zoom: 11,
+             center: {lat: 40.645037, lng: -73.880224},
+             });
+         
+         var image = 'images/maps-and-flags.png';
+         var beachMarker = new google.maps.Marker({
+             position: {lat: 40.645037, lng: -73.880224},
+             map: map,
+             icon: image
+           });
+         }
+      </script>
+      <!-- google map js -->
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8eaHt9Dh5H57Zh0xVTqxVdBFCvFMqFjQ&callback=initMap"></script>
+      <!-- end google map js --> 
    </body>
 </html>
 
