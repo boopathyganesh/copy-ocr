@@ -5,7 +5,7 @@ from flask import Flask, render_template, request
 from ocr_core import ocr_core
 
 
-UPLOAD_FOLDER = '/static/uploads/'
+UPLOAD_FOLDER = 'static/uploads/'
 ALLOWED_EXTENSIONS = set(['png', 'jpg', 'jpeg', 'gif'])
 
 app = Flask(__name__)
