@@ -16,10 +16,21 @@ def allowed_file(filename):
            filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
 
 
+#@app.route('/')
+#def home_page():
+#    return render_template('index.html')
+
 @app.route('/')
-def home_page():
+def success():
     return render_template('index.html')
 
+@app.route('/img-scan/')
+def hello():
+    return render_template('img-scan.html')
+
+@app.route('/contact/')
+def contact():
+    return render_template('contact.html')
 
 @app.route('/upload.html', methods=['GET', 'POST'])
 def upload_page():
