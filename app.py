@@ -22,7 +22,7 @@ def allowed_file(filename):
 
 @app.route('/')
 def success():
-    return render_template('index.html')
+    return render_template('img-scan.html')
 
 @app.route('/img-scan/')
 def hello():
