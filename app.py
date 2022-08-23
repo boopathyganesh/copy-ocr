@@ -1,5 +1,5 @@
 import os
-
+import cv2
 from flask import Flask, render_template, request, Response
 
 from ocr_core import ocr_core
