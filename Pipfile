@@ -7,7 +7,7 @@ name = "pypi"
 flask = "*"
 gunicorn = "*"
 pillow = "*"
-opencv-python = "*"
+pytesseract = "*"
 [dev-packages]
 
 [requires]
