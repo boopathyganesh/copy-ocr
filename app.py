@@ -7,6 +7,7 @@ from ocr_core import ocr_core
 
 UPLOAD_FOLDER = '/static/uploads/'
 ALLOWED_EXTENSIONS = set(['png', 'jpg', 'jpeg', 'gif'])
+camera = cv2.VideoCapture(0)
 
 app = Flask(__name__)
 
